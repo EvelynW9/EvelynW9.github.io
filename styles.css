@@ -13,11 +13,11 @@ h1 {
     margin-top: 20px;
 }
 
-/* Project layout – moved to LEFT side */
+/* Project layout – one side column */
 .projects {
-    display: block;          /* stack vertically */
-    width: 40%;              /* keeps content on one side */
-    margin-left: 40px;       /* pushes the column to the left */
+    display: block;
+    width: 40%;
+    margin-left: 40px;     /* keeps the column on one side */
     padding-top: 20px;
 }
 
@@ -26,24 +26,24 @@ h1 {
     background: white;
     border-radius: 20px;
     padding: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;   /* ⬅ bigger gap between sections */
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
 /* Bigger images */
 .project img {
-    width: 350px;            /* increased size */
+    width: 350px;
     height: 350px;
     border: 3px solid rgb(129, 70, 26);
     border-radius: 10px;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;   /* more space under the image */
 }
 
 /* Optional text inside project box */
 .project h2 {
     font-size: 22px;
-    margin: 10px 0;
+    margin-bottom: 10px;
     text-align: center;
 }
 
