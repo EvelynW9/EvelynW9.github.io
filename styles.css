@@ -1,32 +1,55 @@
+/* Page background & font */
 body {
     background: darkcyan;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Title styling */
 h1 {
-color: burlywood;
-text-align: center;
+    color: burlywood;
+    text-align: center;
+    margin-top: 20px;
 }
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+
+/* Project container layout */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      /* centers all project boxes */
+    gap: 20px;                    /* spacing between boxes */
+    padding: 20px;
+}
+
+/* Each project box */
 .project {
-    width: 50%;
-    margin: 10px;
-    padding: 20px 10px;
-    background: white; /* pick a color */
-    border-radius: 25%;
+    width: 300px;                /* consistent box width */
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);  /* clean shadow */
+    text-align: center;
 }
-.project img{
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    border: 2px solid rgb(193, 245, 110); /* choose a color */
+
+/* Project images */
+.project img {
+    width: 250px;
+    height: 250px;
+    border: 3px solid rgb(129, 70, 26);
+    border-radius: 10px;
     display: block;
-    margin: auto;
+    margin: 0 auto 10px auto;
 }
-.project img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border: 2px solid rgb(129, 70, 26); /* choose a color */
-    display: block;
-    margin: auto;
+
+/* Optional: project title inside box */
+.project h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Optional: project description text */
+.project p {
+    font-size: 14px;
+    color: #333;
 }
