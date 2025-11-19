@@ -6,50 +6,49 @@ body {
     padding: 0;
 }
 
-/* Title styling */
+/* Title */
 h1 {
     color: burlywood;
     text-align: center;
     margin-top: 20px;
 }
 
-/* Project container layout */
+/* Project layout – moved to LEFT side */
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;      /* centers all project boxes */
-    gap: 20px;                    /* spacing between boxes */
-    padding: 20px;
+    display: block;          /* stack vertically */
+    width: 40%;              /* keeps content on one side */
+    margin-left: 40px;       /* pushes the column to the left */
+    padding-top: 20px;
 }
 
 /* Each project box */
 .project {
-    width: 300px;                /* consistent box width */
     background: white;
     border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);  /* clean shadow */
-    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Project images */
+/* Bigger images */
 .project img {
-    width: 250px;
-    height: 250px;
+    width: 350px;            /* increased size */
+    height: 350px;
     border: 3px solid rgb(129, 70, 26);
     border-radius: 10px;
     display: block;
     margin: 0 auto 10px auto;
 }
 
-/* Optional: project title inside box */
+/* Optional text inside project box */
 .project h2 {
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0;
+    text-align: center;
 }
 
-/* Optional: project description text */
 .project p {
-    font-size: 14px;
+    font-size: 15px;
+    text-align: center;
     color: #333;
 }
