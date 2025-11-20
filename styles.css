@@ -13,23 +13,40 @@ h1 {
     margin-top: 20px;
 }
 
-/* Project layout – left-side column */
-.projects {
-    width: 40%;
-    margin-left: 40px;    /* Keeps column on one side */
-    padding-top: 20px;
+/* ---- TWO COLUMN LAYOUT ---- */
+.container {
+    display: flex;
+    justify-content: center;   /* keeps columns centered */
+    align-items: flex-start;
+    gap: 40px;                 /* space between project column + resume column */
+    margin-top: 40px;
+    padding: 0 40px;
 }
 
-/* Each project card */
+/* LEFT SIDE – Projects with images */
+.projects {
+    width: 40%;
+}
+
+/* RIGHT SIDE – Resume section */
+.resume {
+    width: 40%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Project cards */
 .project {
     background: white;
     border-radius: 20px;
     padding: 20px;
-    margin-bottom: 40px;   /* GAP between project boxes */
+    margin-bottom: 40px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Larger images centered */
+/* Larger images */
 .project img {
     width: 350px;
     height: 350px;
@@ -39,7 +56,7 @@ h1 {
     margin: 0 auto 20px auto;
 }
 
-/* Project text */
+/* Text inside project box */
 .project h2 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -52,17 +69,7 @@ h1 {
     color: #333;
 }
 
-/* Default gap between big website sections */
+/* Spacing between sections if needed */
 section {
-    margin-bottom: 50px;   /* GLOBAL consistent gap */
-}
-
-/* Special extra space after Education */
-.education {
-    margin-bottom: 70px;
-}
-
-/* Extra space before Work Experience */
-.work-experience {
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
