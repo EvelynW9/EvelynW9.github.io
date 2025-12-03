@@ -10,65 +10,65 @@ body {
 h1 {
     color: burlywood;
     text-align: center;
-    margin-top: 40px;   /* smaller margin */
+    margin-top: 40px;
 }
 
-/* --- TWO ROW, TWO COLUMN GRID --- */
+/* --- MAIN 2×2 GRID --- */
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 25px;           /* smaller gap between boxes */
-    padding: 20px;       /* smaller padding around grid */
+    grid-template-columns: 1fr 1fr;   /* two columns */
+    grid-template-rows: auto auto;    /* two rows */
+    gap: 25px;                         /* smaller gap */
+    padding: 25px;
 }
 
-/* Box styling – smaller now */
+/* Project sections */
 .projects,
-.more-projects,
-.resume,
-.extra-section {
-    padding: 15px;       /* smaller padding inside boxes */
+.more-projects {
+    background: transparent;
 }
 
-/* Resume + Extra box */
+/* Resume + extra sections */
 .resume,
 .extra-section {
     background: white;
-    border-radius: 15px;   /* slightly smaller radius */
-    padding: 15px;
+    padding: 15px;                      /* smaller padding */
+    border-radius: 15px;                /* smaller corners */
     box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
 }
 
-/* Project Cards – reduced size */
+/* Project cards */
 .project {
     background: white;
     border-radius: 15px;
-    padding: 15px;
-    margin-bottom: 20px;  /* smaller spacing */
-    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
-    max-width: 260px;     /* ← makes each card smaller */
+    padding: 15px;                       /* smaller box */
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    max-width: 260px;                    /* MUCH smaller */
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Project images – reduced */
+/* Project images */
 .project img {
     width: 100%;
-    height: 180px;        /* smaller image height */
+    height: 180px;                       /* smaller image */
     object-fit: cover;
     border: 2px solid rgb(129, 70, 26);
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-/* Titles smaller */
+/* Project Titles */
 .project h2 {
-    font-size: 18px;
+    font-size: 18px;                     /* smaller text */
+    text-align: center;
     margin-bottom: 6px;
 }
 
-/* Descriptions smaller */
+/* Project Descriptions */
 .project p {
     font-size: 14px;
+    text-align: center;
     color: #333;
 }
