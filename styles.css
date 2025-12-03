@@ -37,7 +37,7 @@ h1 {
 
 /* Images */
 .project img {
-    width: 800%;
+    width: 80%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
