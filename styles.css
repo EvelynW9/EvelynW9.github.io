@@ -1,36 +1,19 @@
-/* Page background & font */
-body {
-    background: darkcyan;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Title */
-h1 {
-    color: burlywood;
-    text-align: center;
-    margin-top: 60px;
-}
-
-/* --- MAIN GRID (2 ROWS, 2 COLUMNS) --- */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;   /* two equal columns */
-    grid-template-rows: auto auto;    /* two rows */
+/* ---- FOUR SEPARATE HORIZONTAL ROWS ---- */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     gap: 40px;
-    padding: 40px;
+    margin: 40px 30px;   /* spacing between rows */
 }
 
-/* LEFT COLUMN – projects (row 1 and row 2) */
-.projects,
-.more-projects {
-    background: transparent;
+/* Each column inside a row */
+.col {
+    width: 50%;
 }
 
-/* RIGHT COLUMN – resume + other section */
-.resume,
-.extra-section {
+/* Right-side white boxes */
+.white-box {
     background: white;
     padding: 20px;
     border-radius: 20px;
@@ -56,16 +39,13 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Project Titles */
 .project h2 {
-    font-size: 22px;
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 22px;
 }
 
-/* Project Descriptions */
 .project p {
-    font-size: 15px;
     text-align: center;
     color: #333;
+    font-size: 15px;
 }
