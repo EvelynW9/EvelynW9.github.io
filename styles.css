@@ -19,8 +19,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(3, auto);   /* 3 rows */
-    gap: 20px;                             /* spacing between boxes */
-    padding: 20px;
+    gap: 30px;                             /* increased gap to see background */
+    padding: 30px;                         /* outer padding */
 }
 
 /* Grid items */
@@ -47,7 +47,7 @@ h1 {
 /* Project images */
 .project img {
     width: 100%;
-    height: 150px;         /* smaller images */
+    height: 150px;
     object-fit: cover;
     border: 3px solid rgb(129, 70, 26);
     border-radius: 8px;
@@ -56,14 +56,14 @@ h1 {
 
 /* Project Titles */
 .project h2 {
-    font-size: 16px;       /* smaller title */
+    font-size: 16px;
     text-align: center;
     margin-bottom: 6px;
 }
 
 /* Project Descriptions */
 .project p {
-    font-size: 13px;       /* smaller description */
+    font-size: 13px;
     text-align: center;
     color: #333;
 }
