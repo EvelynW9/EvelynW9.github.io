@@ -1,6 +1,6 @@
 /* Page background & font */
 body {
-    background: rgba(0, 139, 139, 0.945);
+    background: rgba(4, 165, 165, 0.836);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -35,6 +35,31 @@ h1 {
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
     text-align: center;
+}
+
+/* ---- RESUME SECTION BOX (white background full area) ---- */
+.resume {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Center all resume links */
+.resume a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resume a:hover {
+    text-decoration: underline;
 }
 
 /* ---- PROJECT IMAGES (BIGGER + SHADOW) ---- */
