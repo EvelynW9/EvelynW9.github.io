@@ -4,6 +4,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers EVERYTHING horizontally */
 }
 
 /* Title */
@@ -13,33 +16,28 @@ h1 {
     margin-top: 40px;
 }
 
-/* Main rows stacked vertically */
+/* ---- ROW WRAPPER ---- */
 .row {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-
+    width: 80%;                   /* keeps rows centered and narrower */
+    max-width: 900px;
+    margin: 30px auto;            /* space between rows */
+    
     display: flex;
-    flex-wrap: wrap;          /* allow multiple boxes per line */
-    justify-content: center;
-    gap: 20px;                /* space between boxes */
+    justify-content: center;      /* centers boxes inside row */
+    gap: 30px;                    /* space between columns */
 }
 
-/* Project cards */
-.project {
+/* ---- BOXES inside rows ---- */
+.box {
+    width: 45%;                   /* 2 boxes per row */
     background: white;
-    border-radius: 12px;
-    padding: 12px;
-    width: calc(50% - 20px);  /* 2 boxes per row minus gap */
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
     text-align: center;
 }
 
-/* Project images */
+/* Project card inside a box */
 .project img {
     width: 100%;
     height: 140px;
@@ -49,7 +47,6 @@ h1 {
     margin-bottom: 8px;
 }
 
-/* Titles & descriptions */
 .project h2 {
     font-size: 16px;
     margin-bottom: 6px;
