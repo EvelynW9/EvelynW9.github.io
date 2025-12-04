@@ -64,7 +64,7 @@ h1 {
 
 /* ---- PROJECT IMAGES (RECTANGLES + SHADOW) ---- */
 .project img {
-    width: 270px;               /* rectangular width */
+    width: 300px;               /* rectangular width */
     height: 180px;              /* rectangular height */
     object-fit: cover;
 
