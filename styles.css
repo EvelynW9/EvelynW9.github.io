@@ -40,7 +40,7 @@ h1 {
 /* ---- PROJECT IMAGES (UPDATED) ---- */
 .project img {
     width: 85%;                 /* smaller width */
-    height: 100px;              /* shorter height */
+    height: 120px;              /* shorter height */
     object-fit: cover;
     
     border: 6px solid white;    /* thick white border */
