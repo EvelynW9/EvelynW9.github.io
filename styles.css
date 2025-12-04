@@ -1,6 +1,6 @@
 /* Page background & font */
 body {
-    background: darkcyan;
+    background: rgba(0, 139, 139, 0.945);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
