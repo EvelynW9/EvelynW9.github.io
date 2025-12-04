@@ -1,6 +1,6 @@
 /* Page background & font */
 body {
-    background: rgb(2, 159, 159);
+    background: darkcyan;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -29,9 +29,9 @@ h1 {
 
 /* ---- BOXES inside rows ---- */
 .box {
-    width: 48%;                   /* slightly wider for bigger images */
+    width: 48%;                   /* 2 boxes per row */
     background: white;
-    padding: 25px;                /* extra padding for taller images */
+    padding: 25px;                /* padding for content */
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
     text-align: center;
@@ -62,10 +62,10 @@ h1 {
     text-decoration: underline;
 }
 
-/* ---- PROJECT IMAGES (TALLER RECTANGLES + SHADOW) ---- */
+/* ---- PROJECT IMAGES (RECTANGLES + SHADOW) ---- */
 .project img {
-    width: 220px;               /* same width */
-    height: 250px;              /* taller height */
+    width: 250px;               /* rectangular width */
+    height: 180px;              /* rectangular height */
     object-fit: cover;
 
     border: 6px solid white;    /* thick white border */
