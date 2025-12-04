@@ -29,7 +29,7 @@ h1 {
 
 /* ---- BOXES inside rows ---- */
 .box {
-    width: 45%;                   /* 2 boxes per row */
+    width: 50%;                   /* 2 boxes per row */
     background: white;
     padding: 15px;
     border-radius: 15px;
@@ -40,7 +40,7 @@ h1 {
 /* ---- RESUME SECTION BOX (white background full area) ---- */
 .resume {
     background: white;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     border-radius: 15px;
     text-align: center;
