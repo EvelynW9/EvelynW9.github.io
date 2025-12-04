@@ -1,6 +1,6 @@
 /* Page background & font */
 body {
-    background: rgba(4, 165, 165, 0.836);
+    background: rgb(1, 159, 159);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -29,9 +29,9 @@ h1 {
 
 /* ---- BOXES inside rows ---- */
 .box {
-    width: 50%;                   /* 2 boxes per row */
+    width: 48%;                   /* slightly wider for bigger images */
     background: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
     text-align: center;
@@ -40,7 +40,7 @@ h1 {
 /* ---- RESUME SECTION BOX (white background full area) ---- */
 .resume {
     background: white;
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     border-radius: 15px;
     text-align: center;
@@ -62,10 +62,10 @@ h1 {
     text-decoration: underline;
 }
 
-/* ---- PROJECT IMAGES (BIGGER + SHADOW) ---- */
+/* ---- PROJECT IMAGES (BIGGER SQUARE + SHADOW) ---- */
 .project img {
-    width: 180px;               /* bigger square */
-    height: 180px;              /* bigger square */
+    width: 220px;               /* bigger square */
+    height: 220px;              /* bigger square */
     object-fit: cover;
 
     border: 6px solid white;    /* thick white border */
