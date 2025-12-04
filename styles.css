@@ -1,61 +1,52 @@
-/* Page background & font */
-body {
-    background: darkcyan;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<h1>My Portfolio</h1>
 
-/* Title */
-h1 {
-    color: burlywood;
-    text-align: center;
-    margin-top: 40px;
-}
+<!-- ROW 1 -->
+<div class="row">
+    <div class="column">
+        <div class="project">
+            <img src="images/p1.png" alt="Project 1">
+            <h2>Project 1</h2>
+            <p>Description...</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="project">
+            <img src="images/p2.png" alt="Project 2">
+            <h2>Project 2</h2>
+            <p>Description...</p>
+        </div>
+    </div>
+</div>
 
-/* Main rows stacked vertically */
-.row {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+<!-- ROW 2 -->
+<div class="row">
+    <div class="column">
+        <div class="project">
+            <img src="images/p3.png" alt="Project 3">
+            <h2>Project 3</h2>
+            <p>Description...</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="info-box">
+            <h2>Resume</h2>
+            <p>Insert PDF / HTML links here.</p>
+        </div>
+    </div>
+</div>
 
-    display: flex;
-    flex-wrap: wrap;          /* allow multiple boxes per line */
-    justify-content: center;
-    gap: 20px;                /* space between boxes */
-}
-
-/* Project cards */
-.project {
-    background: white;
-    border-radius: 12px;
-    padding: 12px;
-    width: calc(50% - 20px);  /* 2 boxes per row minus gap */
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-/* Project images */
-.project img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border: 2px solid rgb(129, 70, 26);
-    border-radius: 6px;
-    margin-bottom: 8px;
-}
-
-/* Titles & descriptions */
-.project h2 {
-    font-size: 16px;
-    margin-bottom: 6px;
-}
-
-.project p {
-    font-size: 13px;
-    color: #333;
-}
+<!-- ROW 3 -->
+<div class="row">
+    <div class="column">
+        <div class="info-box">
+            <h2>About Me</h2>
+            <p>Short bio, mission statement, avatar, etc.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="info-box">
+            <h2>Skills</h2>
+            <p>List of skills or resume links.</p>
+        </div>
+    </div>
+</div>
