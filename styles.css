@@ -37,21 +37,26 @@ h1 {
     text-align: center;
 }
 
-/* Project card inside a box */
+/* ---- PROJECT IMAGES (UPDATED) ---- */
 .project img {
-    width: 100%;
-    height: 140px;
+    width: 85%;                 /* smaller width */
+    height: 100px;              /* shorter height */
     object-fit: cover;
-    border: 2px solid rgb(129, 70, 26);
-    border-radius: 6px;
-    margin-bottom: 8px;
+    
+    border: 6px solid white;    /* thick white border */
+    border-radius: 10px;
+
+    display: block;
+    margin: 0 auto 10px auto;   /* centered image */
 }
 
+/* Titles */
 .project h2 {
     font-size: 16px;
     margin-bottom: 6px;
 }
 
+/* Description text */
 .project p {
     font-size: 13px;
     color: #333;
