@@ -10,17 +10,24 @@ body {
 h1 {
     color: burlywood;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
-/* ---- THREE ROWS FULL WIDTH ---- */
+/* Each row full-width stacked vertically */
 .row {
-    width: 90%;                     /* spans most of page */
-    margin: 20px auto;              /* centers row with vertical spacing */
+    width: 90%;                     /* full width of container */
+    max-width: 1000px;              /* optional max width */
+    margin: 20px auto;              /* center horizontally, vertical spacing */
     background: white;
-    padding: 15px;                  /* smaller padding */
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: row;            /* keep boxes horizontal inside row */
+    justify-content: center;        /* center horizontally */
+    flex-wrap: wrap;                /* allow wrapping to next line if needed */
+    gap: 20px;                      /* space between boxes */
 }
 
 /* Project cards inside rows */
@@ -28,34 +35,28 @@ h1 {
     background: white;
     border-radius: 12px;
     padding: 12px;
-    margin-bottom: 15px;
-    max-width: 70%;                 /* smaller box width */
-    margin-left: auto;
-    margin-right: auto;             /* center inside row */
+    width: 200px;                   /* smaller width for multiple boxes */
     box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
 /* Project images */
 .project img {
-    width: 70%;                      /* smaller width */
-    height: 140px;                   /* smaller height */
+    width: 100%;                     /* fit inside project box */
+    height: 140px;
     object-fit: cover;
     border: 2px solid rgb(129, 70, 26);
     border-radius: 6px;
-    margin: 0 auto 8px auto;
-    display: block;
+    margin-bottom: 8px;
 }
 
-/* Project Titles */
+/* Titles & descriptions */
 .project h2 {
     font-size: 16px;
-    text-align: center;
     margin-bottom: 6px;
 }
 
-/* Project Descriptions */
 .project p {
     font-size: 13px;
-    text-align: center;
     color: #333;
 }
