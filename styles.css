@@ -18,7 +18,7 @@ h1 {
 
 /* ---- ROW WRAPPER ---- */
 .row {
-    width: 80%;                   /* keeps rows centered and narrower */
+    width: 80%;
     max-width: 900px;
     margin: 30px auto;            /* space between rows */
     
@@ -37,27 +37,39 @@ h1 {
     text-align: center;
 }
 
-/* ---- PROJECT IMAGES (SQUARE) ---- */
+/* ---- PROJECT IMAGES (BIGGER + SHADOW) ---- */
 .project img {
-    width: 140px;               /* square width */
-    height: 140px;              /* square height */
-    object-fit: cover;          /* ensures perfect square crop */
+    width: 180px;               /* bigger square */
+    height: 180px;              /* bigger square */
+    object-fit: cover;
 
     border: 6px solid white;    /* thick white border */
     border-radius: 10px;
 
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.35);  /* shadow around image */
+
     display: block;
-    margin: 0 auto 10px auto;   /* centered image */
+    margin: 0 auto 12px auto;   /* centered image */
 }
 
-/* Titles */
+/* ---- WHITE BACKGROUND FOR TEXT ---- */
+.project h2,
+.project p {
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    width: 90%;
+    margin: 6px auto;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Title text */
 .project h2 {
-    font-size: 16px;
-    margin-bottom: 6px;
+    font-size: 18px;
 }
 
 /* Description text */
 .project p {
-    font-size: 13px;
+    font-size: 14px;
     color: #333;
 }
