@@ -37,12 +37,12 @@ h1 {
     text-align: center;
 }
 
-/* ---- PROJECT IMAGES (UPDATED) ---- */
+/* ---- PROJECT IMAGES (SQUARE) ---- */
 .project img {
-    width: 85%;                 /* smaller width */
-    height: 120px;              /* shorter height */
-    object-fit: cover;
-    
+    width: 140px;               /* square width */
+    height: 140px;              /* square height */
+    object-fit: cover;          /* ensures perfect square crop */
+
     border: 6px solid white;    /* thick white border */
     border-radius: 10px;
 
